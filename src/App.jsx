@@ -4,6 +4,8 @@ import axios from 'axios'
 
 import { BrowserRouter,Routes,Route } from 'react-router'
 import PatientList from './components/Patient-List'
+import Register from './components/Register'
+import Login from './components/Login'
 
 function App() {
 
@@ -11,9 +13,9 @@ function App() {
     <>
 <BrowserRouter>
 <Routes>
-  <Route path="/register" element="{<Register/>}"></Route>
-  <Route path="/" element="<Login/>"></Route>
-  <Route path="/list" element="<PatientList/>"></Route>
+  <Route path="/register" element={<Register/>}></Route>
+  <Route path="/" element={<Login/>}></Route>
+  <Route path="/list" element={<PatientList/>}></Route>
 
 </Routes>
 </BrowserRouter>
